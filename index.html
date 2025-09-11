@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zukun-Best Software Training Institute</title>
+  <link rel="icon" type="icon" href="img/Copy-of-Zukun-new-Logo-modified.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white py-3">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="img/Copy-of-Zukun-new-Logo-modified.png" alt="logo">
+        Zukun
+      </a>
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">IT COURSES</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li><a class="dropdown-item" href="#">Data Science</a></li>
+              <li><a class="dropdown-item" href="#">Cloud and Devops</a></li>
+              <li><a class="dropdown-item" href="#">Robotic Process Automation</a></li>
+              <li><a class="dropdown-item" href="#">Other Training</a></li>
+            </ul>   
+          </li>
+          <li class="nav-item ms-lg-3">
+            <button class="btn btn-primary enroll-btn" data-bs-toggle="modal" data-bs-target="#enrollModal">
+    Enroll Now
+  </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+ <main>
+  <section class="position-relative">
+  <div class="container-fluid p-0">
+    <img src="img/BANER-IMAGE-2.png" alt="Banner" class="w-100 img-fluid">
+    
+    <!-- Form overlay -->
+     <center>
+      <div class="form-container text-start">
+      <h2>Talk To Us</h2>
+      <p>We are Happy to Help You. Call: 89259 54490</p>
+
+      <form id="contactForm">
+        <label>Name <span>*</span></label>
+        <div class="input-group">
+          <input type="text" id="firstName" placeholder="First Name" required>
+          <input type="text" id="lastName" placeholder="Last Name" required>
+        </div>
+        <div class="error" id="nameError">Please enter both first and last name.</div>
+
+        <label>Phone <span>*</span></label>
+        <input type="text" id="phone" placeholder="" required>
+        <div class="error" id="phoneError">Please enter a valid 10-digit phone number.</div>
+
+        <label>Email <span>*</span></label>
+        <input type="email" id="email" placeholder="" required>
+        <div class="error" id="emailError">Please enter a valid email.</div>
+
+        <label>Interested Course <span>*</span></label>
+        <input type="text" id="course" placeholder="" required>
+        <div class="error" id="courseError">Please enter a course name.</div>
+
+        <label>Service Needed <span>*</span></label>
+        <select id="service" required>
+          <option value="">-Select-</option>
+          <option>Training & Courses</option>
+          <option>Coporate Training</option>
+          <option>Business</option>
+        </select>
+        <div class="error" id="serviceError">Please select a service.</div>
+
+        <button type="submit" class="form-btn mt-4">Submit</button>
+      </form>
+    </div>
+     </center>
+    
+  </div>
+</section>
+
+  <section class=" text-center heading-text">
+    <p class="fw-bold text-center text-secondary" style="font-size: 18px;">JOIN US TO ELEVATE</p>
+    <h1>Your <span style="color: blueviolet;">IT Career</span>  With Unparalleled Training <br> and Support !</h1>
+
+    <div class="container py-5">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    
+    <!-- Card 1 -->
+    <div class="col">
+      <div class="card h-100 text-center  shadow-sm p-3">
+        <img src="img/payment.png" class="card-img-top mx-auto" alt="Payment" style="width:80px;">
+        <div class="card-header fw-bold">Affordable</div>
+        <div class="card-body">
+          <p class="card-text"> Discover affordable fees and high-value learning opportunities at Zukun Academy, where your career aspirations meet reality. </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col">
+      <div class="card h-100 text-center  shadow-sm p-3">
+        <img src="img/tick.png" class="card-img-top mx-auto" alt="Tick" style="width:80px;">
+        <div class="card-header fw-bold">Live Projects</div>
+        <div class="card-body">
+          <p class="card-text">Our courses are designed to bridge the gap between theory and practice, our LIVE Projects allow students to work on real-world scenarios under the guidance of industry experts.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col">
+      <div class="card h-100 text-center  shadow-sm p-3">
+        <img src="img/calendar.png" class="card-img-top mx-auto" alt="Calendar" style="width:80px;">
+        <div class="card-header fw-bold">Flexiblity</div>
+        <div class="card-body">
+          <p class="card-text">we understand that flexibility is key to accommodating your busy schedule. Whether you prefer to learn in-person or online, we offer flexible learning options to suit your needs. </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Card 4 -->
+    <div class="col">
+      <div class="card h-100 text-center  shadow-sm p-3">
+        <img src="img/mentorship.png" class="card-img-top mx-auto" alt="Mentorship" style="width:80px;">
+        <div class="card-header fw-bold">Mentorship</div>
+        <div class="card-body">
+          <p class="card-text">Zukun Academy offers hands-on IT and software training in Programming, Digital Marketing, Networking, and more. Learn from industry experts and fast-track your career with guaranteed placement support.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="col">
+      <div class="card h-100 text-center  shadow-sm p-3">
+        <img src="img/certification.png" class="card-img-top mx-auto" alt="Certification" style="width:80px;">
+        <div class="card-header fw-bold">Certification</div>
+        <div class="card-body">
+          <p class="card-text">Earn industry-recognized certifications upon completion of your courses at Zukun Academy.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6-->
+    <div class="col">
+      <div class="card h-100 text-center  shadow-sm p-3">
+        <img src="img/interview.png" class="card-img-top mx-auto" alt="Interview" style="width:80px;">
+        <div class="card-header fw-bold">Interview Preparation</div>
+        <div class="card-body">
+          <p class="card-text">Zukun Academy helps you ace IT interviews with mock sessions, resume tips, and expert guidance to land your dream job.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+  </section>
+  
+<div class="text-center mt-5">
+  <button class="btn btn-primary enroll-btn" data-bs-toggle="modal" data-bs-target="#enrollModal">
+    Enroll Now
+  </button>
+</div>
+
+
+  <section>
+  <div class="container py-5">
+    <div class="row align-items-center">
+      
+      <!-- Text Column -->
+      <div class="col-12  col-lg-4 mb-4 mb-md-0">
+        <h1 style="color: blueviolet;">ABOUT US</h1>
+        <p class="fw-semibold  fs-5" style="color: rgb(146, 146, 148);">Software Training Institute in Chennai</p>
+        <h2 class="fw-semibold">WELCOME TO ZUKUN ACADEMY</h2>
+        <p>Our vision is to become the best <span class="text-primary fw-medium">IT training institute in Chennai</span>. While this is a straightforward goal, achieving it demands significant investment and unwavering dedication.</p>
+        <p>Zukun is committed to making the acquisition of software skills both straightforward and enriching. Our courses are expertly designed to offer immersive, hands-on learning experiences, allowing students to gain knowledge through practical application. We emphasize the development of practical skills that are in high demand by multinational corporations and startups. At Zukun, we don't just teach software – we equip individuals to build successful careers in the dynamic tech industry.</p>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-12 col-lg-8 text-center">
+        <div class="container">
+        <!-- <h1 style="color: blueviolet;">IT Courses</h1> -->
+        <div id="it-courses-carousel" class="carousel multi-carousel">
+            <div class="carousel-inner d-flex flex-row flex-nowrap">
+                <div class="card it-course-card mx-2">
+                    <img src="img/AI.png" alt="">
+                    <div class="card-header">Artificial Intelligence</div>
+                    <div class="card-body">Artificial Intelligence (AI) is revolutionizing industries and reshaping the future of technology. If you are looking to dive into this cutting-edge field, Zukun Academy in Chennai offers the premier AI training program designed.</div>
+                </div>
+                <div class="card it-course-card mx-2">
+                    <img src="img/data-science.png" alt="">
+                    <div class="card-header">Python with Datascience</div>
+                    <div class="card-body">Our Data Science with Python course in Chennai is designed to equip you with the skills and knowledge needed to excel in the field of data science.</div>
+                </div>
+                <div class="card it-course-card mx-2">
+                    <img src="img/Java filllstack.png" alt="">
+                    <div class="card-header">Tableau Training</div>
+                    <div class="card-body">Our Java Full Stack Developer course in Chennai is designed to equip you with skills in both front-end and back-end development using Java.</div>
+                </div>
+                <div class="card it-course-card mx-2">
+                    <img src="img/php.png" alt="">
+                    <div class="card-header">PHP Training</div>
+                    <div class="card-body">PHP is a popular general-purpose scripting language that is especially suited to web development. Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.</div>
+                </div>
+                <div class="card it-course-card mx-2">
+                    <img src="img/Aws devops.png" alt="">
+                    <div class="card-header">AWS DevOps Training</div>
+                    <div class="card-body">Mastering AWS DevOps is essential for professionals aiming to streamline their development and operational processes, enhance productivity, and ensure seamless delivery of applications and services</div>
+                </div>
+                <div class="card it-course-card mx-2">
+                    <img src="img/python.png" alt="">
+                    <div class="card-header">Python Training</div>
+                    <div class="card-body">Master both front-end and back-end development with Zukun Academy’s Python Full Stack Developer Training. Designed to equip you with the essential skills and knowledge.</div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" id="carouselPrev">
+                <span class=" p-2" style="background-color: gray;border-radius: 18px;">❮</span>
+            </button>
+            <button class="carousel-control-next" type="button" id="carouselNext">
+                <span class=" p-2" style="background-color: gray;border-radius: 18px;">❯</span>
+            </button>
+        </div>
+    </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="reviews-section container py-5">
+
+  <!-- Section Header -->
+  <div class="section-header text-center mb-4">
+    <small class="text-muted text-secondary">Still having doubts?</small>
+    <h2>Recent <span style="color:blueviolet;">reviews</span> from our Students</h2>
+  </div>
+
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-3 col-md-12 mb-4 mt-lg-5">
+      <div class="rating-box text-center p-3  rounded ">
+        <h4 class="mb-2">EXCELLENT</h4>
+        <div class="stars mb-2" style="font-size:20px; color:gold;">★★★★★</div>
+        <p>Based on <b>248 reviews</b></p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" width="100">
+      </div>
+    </div>
+
+    <!-- Right Column Carousel -->
+    <div class="col-lg-9 col-md-12">
+      <div class="carousel-container position-relative">
+        <button class="carousel-btn prev hidden" id="prevBtn">&#10094;</button>
+        <div class="review-carousel overflow-hidden">
+          <div class="review-track d-flex transition" id="reviewTrack">
+
+            <!-- 1 -->
+            <div class="review-card p-3">
+              <div class="review-card-inner border rounded shadow-sm p-3 h-100">
+                <div class="review-header d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="img/p-1.png" width="35" height="35" class="rounded-circle">
+                    <h6 class="mb-0">Swathi Kandasamy</h6>
+                  </div>
+                  <img src="img/google.svg" width="20">
+                </div>
+                <small class="text-muted">2025-02-12</small>
+                <div class="review-stars my-2" style="color:gold;">★★★★★</div>
+                <p class="review-text">Best training center for digital marketing</p>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="review-card p-3">
+              <div class="review-card-inner border rounded shadow-sm p-3 h-100">
+                <div class="review-header d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="img/p-2.png" width="35" height="35" class="rounded-circle">
+                    <h6 class="mb-0">Sankar (Sundar)</h6>
+                  </div>
+                  <img src="img/google.svg" width="20">
+                </div>
+                <small class="text-muted">2025-01-28</small>
+                <div class="review-stars my-2" style="color:gold;">★★★★★</div>
+                <p class="review-text">
+                  I have completed Digital marketing course in zukun academy , teaching was very good and got placed as a Marketing executive in a good company
+                </p>
+                <a href="javascript:void(0)" class="toggle-btn text-secondary text-decoration-none">Read more</a>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="review-card p-3">
+              <div class="review-card-inner border rounded shadow-sm p-3 h-100">
+                <div class="review-header d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="img/p-3.png" width="35" height="35" class="rounded-circle">
+                    <h6 class="mb-0">Jagadesh</h6>
+                  </div>
+                  <img src="img/google.svg" width="20">
+                </div>
+                <small class="text-muted">2025-01-28</small>
+                <div class="review-stars my-2" style="color:gold;">★★★★★</div>
+                <p class="review-text">
+                  Hi, this is Jagadesh. I have completed a data science course at Zukun Academy, where the instructors were very friendly. Our instructor, Ranjith Sir, provided lots of real-time examples for every concept, making it easier to understand.
+                </p>
+                <a href="javascript:void(0)" class="toggle-btn text-secondary text-decoration-none">Read more</a>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="review-card p-3">
+              <div class="review-card-inner border rounded shadow-sm p-3 h-100">
+                <div class="review-header d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="img/p-4.png" width="35" height="35" class="rounded-circle">
+                    <h6 class="mb-0">ŪLÀGÁÑÂTHÄÑ !!!!!</h6>
+                  </div>
+                  <img src="img/google.svg" width="20">
+                </div>
+                <small class="text-muted">2025-01-28</small>
+                <div class="review-stars my-2" style="color:gold;">★★★★★</div>
+                <p class="review-text">
+                  I completed my data science course at zukun academy. The staffs are very friendly and experienced in their field. With that knowledge I have placed in a reputed company.
+                </p>
+                <a href="javascript:void(0)" class="toggle-btn text-secondary text-decoration-none">Read more</a>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="review-card p-3">
+              <div class="review-card-inner border rounded shadow-sm p-3 h-100">
+                <div class="review-header d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="img/p-5.png" width="35" height="35" class="rounded-circle">
+                    <h6 class="mb-0">Abishek</h6>
+                  </div>
+                  <img src="img/google.svg" width="20">
+                </div>
+                <small class="text-muted">2025-01-28</small>
+                <div class="review-stars my-2" style="color:gold;">★★★★★</div>
+                <p class="review-text">
+                  I recently completed my data science course in zukun academy and got placed in an IT sector. Thanks to Ranjit sir, he taught with real time examples and helped improve communication skills.
+                </p>
+                <a href="javascript:void(0)" class="toggle-btn text-secondary text-decoration-none">Read more</a>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="review-card p-3">
+              <div class="review-card-inner border rounded shadow-sm p-3 h-100">
+                <div class="review-header d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="img/p-6.png" width="35" height="35" class="rounded-circle">
+                    <h6 class="mb-0">Abi Jaya</h6>
+                  </div>
+                  <img src="img/google.svg" width="20">
+                </div>
+                <small class="text-muted">2025-01-28</small>
+                <div class="review-stars my-2" style="color:gold;">★★★★★</div>
+                <p class="review-text">
+                  I have completed my data science course at zukun academy where the instructor Ranjith sir was very knowledgeable and taught us with real time examples. The zukun team helped me to get placed.
+                </p>
+                <a href="javascript:void(0)" class="toggle-btn text-secondary text-decoration-none">Read more</a>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="review-card p-3">
+              <div class="review-card-inner border rounded shadow-sm p-3 h-100">
+                <div class="review-header d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="img/p-7.png" width="35" height="35" class="rounded-circle">
+                    <h6 class="mb-0">Dhasvanth RD</h6>
+                  </div>
+                  <img src="img/google.svg" width="20">
+                </div>
+                <small class="text-muted">2025-01-20</small>
+                <div class="review-stars my-2" style="color:gold;">★★★★★</div>
+                <p class="review-text">
+                  Good teaching and coordination. For placement they provide monthly 2 to 3 interviews. Thank you Zukun Academy.
+                </p>
+                <a href="javascript:void(0)" class="toggle-btn text-secondary text-decoration-none">Read more</a>
+              </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="review-card p-3">
+              <div class="review-card-inner border rounded shadow-sm p-3 h-100">
+                <div class="review-header d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="img/p-8.png" width="35" height="35" class="rounded-circle">
+                    <h6 class="mb-0">Naresh Naresh</h6>
+                  </div>
+                  <img src="img/google.svg" width="20">
+                </div>
+                <small class="text-muted">2025-01-20</small>
+                <div class="review-stars my-2" style="color:gold;">★★★★★</div>
+                <p class="review-text">
+                  I have completed UIUX course in Zukun Academy. Teaching was good and I appreciate the team for their effort on our batch.
+                </p>
+                <a href="javascript:void(0)" class="toggle-btn text-secondary text-decoration-none">Read more</a>
+              </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="review-card p-3">
+              <div class="review-card-inner border rounded shadow-sm p-3 h-100">
+                <div class="review-header d-flex justify-content-between align-items-center mb-2">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="img/p-9.png" width="35" height="35" class="rounded-circle">
+                    <h6 class="mb-0">18 CSE 1112- SAKANI...</h6>
+                  </div>
+                  <img src="img/google.svg" width="20">
+                </div>
+                <small class="text-muted">2025-01-18</small>
+                <div class="review-stars my-2" style="color:gold;">★★★★★</div>
+                <p class="review-text">
+                  I am from Madurai, studied data science course here. Teaching is good and for placement they conducted weekly mock interviews. That gave me confidence and I got placed in a company.
+                </p>
+                <a href="javascript:void(0)" class="toggle-btn text-secondary text-decoration-none">Read more</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Enroll Now Button -->
+<div class="text-center mt-5">
+  <button class="btn btn-primary enroll-btn" data-bs-toggle="modal" data-bs-target="#enrollModal">
+    Enroll Now
+  </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade enroll-modal" id="enrollModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-4">
+      <div class="modal-header border-0">
+        <h4 class="modal-title"><img src="img/Copy-of-Zukun-new-Logo-modified.png" width="70px" class="pe-3" alt="">Enroll Now</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form class="enroll-form" novalidate>
+          <div class="row g-2">
+            <div class="col-md-6">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control first-name" required>
+              <div class="invalid-feedback">Please enter first name.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-control last-name" required>
+              <div class="invalid-feedback">Please enter last name.</div>
+            </div>
+          </div>
+
+          <div class="mt-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control email" required>
+            <div class="invalid-feedback">Please enter a valid email.</div>
+          </div>
+
+          <div class="mt-3">
+            <label class="form-label">Phone</label>
+            <input type="tel" class="form-control phone" pattern="[0-9]{10}" required>
+            <div class="invalid-feedback">Enter a valid 10-digit phone number.</div>
+          </div>
+
+          <div class="mt-3">
+            <label class="form-label" >Interested Course</label>
+            <input type="text" class="form-control course" placeholder="EG-WEBSITE DEVELOPMENT" required>
+            <div class="invalid-feedback">Please enter a course name.</div>
+          </div>
+
+          <div class="mt-4">
+            <button type="submit" class="btn w-100 text-white submit-btn" style="background: linear-gradient(90deg, #7b2ff7, #f107a3);">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="py-3">
+  <h1 class="text-center fw-semibold mb-4">Our Learners Work at</h1>
+
+  <div class="logo-slider">
+    <div class="logo-track">
+      <img src="img/Flipkart-Logo.png" alt="Flipkart">
+      <img src="img/Freshworks.png" alt="Freshworks">
+      <img src="img/juspaylogo.svg" alt="Juspay">
+      <img src="img/amazonpng.png" alt="Amazon">
+      <img src="img/Zoho_Corporation-Logo.png" alt="Zoho">
+      <img src="img/Chargebee.png" alt="Chargebee">
+      <img src="img/PayPal.svg.png" alt="PayPal">
+      <img src="img/tcs.jpg" alt="TCS">
+      <!-- duplicate for infinite effect -->
+      <img src="img/Flipkart-Logo.png" alt="Flipkart">
+      <img src="img/Freshworks.png" alt="Freshworks">
+      <img src="img/juspaylogo.svg" alt="Juspay">
+      <img src="img/amazonpng.png" alt="Amazon">
+      <img src="img/Zoho_Corporation-Logo.png" alt="Zoho">
+      <img src="img/Chargebee.png" alt="Chargebee">
+      <img src="img/PayPal.svg.png" alt="PayPal">
+      <img src="img/tcs.jpg" alt="TCS">
+    </div>
+  </div>
+</section>
+
+ </main>
+
+
+
+
+
+   <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row text-center text-lg-start">
+        
+        <!-- Logo + Address -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <img src="img/Copy-of-Zukun-new-Logo-modified.png" alt="Zukun Logo" width="60" class="mb-3">
+          <h5>Zukun</h5>
+          <p><strong>Address:</strong> No:1, Second Floor, 4th Main Rd,<br>
+            Kasturba Nagar, Adyar, Chennai, Tamil Nadu 600020</p>
+          <p>Email: info@zukunacademy.com</p>
+          <p>Phone: +91 89259 54490</p>
+        </div>
+
+        <!-- IT Courses -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>IT Courses</h5>
+          <ul>
+            <li><i class="fas fa-angle-right"></i><a href="#">Data Science Training</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="#">Web Development</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="#">Cloud and DevOps</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="#">Robotic Process Automation</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="#">Other Training</a></li>
+          </ul>
+        </div>
+
+        <!-- Language Courses -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Language Courses</h5>
+          <ul class="row row-cols-2">
+            <li><i class="fas fa-angle-right"></i><a href="#">Chinese</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="#">Arabic</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="#">Japanese</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="#">German</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="#">French</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="#">Spanish</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Follow us on</h5>
+          <div class="social-icons">
+            <a href="#"> <img src="img/facebook.png" alt=""  class="img-fluid" srcset=""></a>
+            <a href="#"><img src="img/instagram.png" alt=""  class="img-fluid" srcset=""></a>
+            <a href="#"><img src="img/youtube.png" alt=""  class="img-fluid" srcset=""></a>
+            <a href="#"><img src="img/linkedin.png" alt=""  class="img-fluid " srcset=""></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- it courses carousel -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const carouselInner = document.querySelector('#it-courses-carousel .carousel-inner');
+    const cards = document.querySelectorAll('#it-courses-carousel .it-course-card');
+    const prevBtn = document.getElementById('carouselPrev');
+    const nextBtn = document.getElementById('carouselNext');
+    let currentIndex = 0;
+
+    function getVisibleCards() {
+        if (window.innerWidth < 768) return 1;   // mobile
+        if (window.innerWidth < 992) return 2;   // tablet
+        return 3;                                // desktop
+    }
+
+    function updateCarousel() {
+        const visibleCards = getVisibleCards();
+        const containerWidth = document.querySelector('#it-courses-carousel').offsetWidth;
+        const cardWidth = containerWidth / visibleCards;
+
+        // Set card widths
+        cards.forEach(card => {
+            card.style.minWidth = cardWidth + 'px';
+            card.style.maxWidth = cardWidth + 'px';
+        });
+
+        // Total scrollable width (number of cards * width)
+        const maxIndex = cards.length - visibleCards;
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        if (currentIndex < 0) currentIndex = 0;
+
+        // Apply transform
+        carouselInner.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        carouselInner.style.width = (cards.length * cardWidth) + 'px';
+    }
+
+    nextBtn.addEventListener('click', function() {
+        const visibleCards = getVisibleCards();
+        const maxIndex = cards.length - visibleCards;
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+        }
+        updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', function() {
+        if (currentIndex > 0) {
+            currentIndex--;
+        }
+        updateCarousel();
+    });
+
+    window.addEventListener('resize', updateCarousel);
+    updateCarousel();
+});
+</script>
+
+
+
+<!-- Review Carousel -->
+<script>
+const track = document.getElementById("reviewTrack");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let index = 0;
+const cards = track.querySelectorAll(".review-card");
+const totalCards = cards.length;
+
+function visibleCardsCount() {
+  if (window.innerWidth <= 576) return 1;
+  if (window.innerWidth <= 992) return 2;
+  return 4;
+}
+
+function updateCarousel() {
+  const cardWidth = cards[0].offsetWidth;
+  track.style.transform = `translateX(-${index * cardWidth}px)`;
+  prevBtn.classList.toggle("hidden", index === 0);
+  nextBtn.classList.toggle("hidden", index >= totalCards - visibleCardsCount());
+}
+
+nextBtn.addEventListener("click", () => {
+  if (index < totalCards - visibleCardsCount()) { index++; updateCarousel(); }
+});
+prevBtn.addEventListener("click", () => {
+  if (index > 0) { index--; updateCarousel(); }
+});
+window.addEventListener("resize", updateCarousel);
+updateCarousel();
+
+/* Read More / Less */
+document.querySelectorAll(".toggle-btn").forEach(btn => {
+  btn.addEventListener("click", function () {
+    const text = this.previousElementSibling;
+    text.classList.toggle("expanded");
+    this.textContent = text.classList.contains("expanded") ? "Read less" : "Read more";
+  });
+});
+</script>
+
+
+
+<!-- enroll-button-script -->
+ <script>
+  // Bootstrap Validation
+  (() => {
+    const forms = document.querySelectorAll('.enroll-form');
+    forms.forEach(form => {
+      form.addEventListener('submit', (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();
+</script>
+
+</body>
+</html>
