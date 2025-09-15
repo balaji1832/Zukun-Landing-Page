@@ -45,31 +45,26 @@
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 7px 25px rgba(0,0,0,0.5);
 }
-
 .multi-carousel {
     position: relative;
     overflow: hidden;
 }
+
 .multi-carousel .carousel-inner {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    gap: 12px; /* spacing instead of mx-2 */
     transition: transform 0.5s cubic-bezier(.4,0,.2,1);
     width: 100%;
 }
+
 .multi-carousel .it-course-card {
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
-    min-width: 33.3333%;
+    flex: 0 0 auto;  /* width controlled by JS */
+    margin: 0;       /* remove mx-2 margin effect */
     margin-bottom: 30px;
 }
-@media (max-width: 767px) {
-    .multi-carousel .it-course-card {
-        flex: 0 0 100%;
-        max-width: 100%;
-        min-width: 100%;
-    }
-}
+
 
 
 
