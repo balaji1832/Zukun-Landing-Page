@@ -65,6 +65,44 @@
     margin-bottom: 30px;
 }
 
+/* Initial hidden state */
+.section {
+  opacity: 0;
+  transform: translateY(30px); /* default movement for fade-up */
+  transition: all 1.8s ease-out; /* slower and smoother */
+}
+
+/* Show state */
+.section.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Different directions */
+.section[data-animation="fade-up"] {
+  transform: translateY(30px);
+}
+
+.section[data-animation="fade-down"] {
+  transform: translateY(-30px);
+}
+
+.section[data-animation="fade-left"] {
+  transform: translateX(-30px);
+}
+
+.section[data-animation="fade-right"] {
+  transform: translateX(30px);
+}
+
+/* When shown */
+.section.show[data-animation="fade-up"],
+.section.show[data-animation="fade-down"],
+.section.show[data-animation="fade-left"],
+.section.show[data-animation="fade-right"] {
+  transform: translate(0, 0);
+}
+
 
 
 

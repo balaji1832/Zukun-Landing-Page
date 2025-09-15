@@ -57,7 +57,7 @@
   </header>
 
  <main>
-  <section class="position-relative">
+  <section id="hero" class="section zoom-in position-relative" data-animation="fade-up">
   <div class="container-fluid p-0">
     <img src="img/BANER-IMAGE-2.png" alt="Banner" class="w-100 img-fluid">
     
@@ -104,7 +104,7 @@
   </div>
 </section>
 
-  <section class=" text-center heading-text">
+  <section id="about" class="section fade-right text-center heading-text" data-animation="fade-right">
     <p class="fw-bold text-center text-secondary" style="font-size: 18px;">JOIN US TO ELEVATE</p>
     <h1>Your <span style="color: blueviolet;">IT Career</span>  With Unparalleled Training <br> and Support !</h1>
 
@@ -192,7 +192,7 @@
 </div>
 
 
-  <section>
+  <section id="courses" class="section zoom-in" data-animation="fade-left">
   <div class="container py-5">
     <div class="row align-items-center">
       
@@ -256,7 +256,7 @@
   </div>
 </section>
 
-<section class="reviews-section container py-5">
+<section id="placements" class="section fade-left reviews-section container py-5"  data-animation="fade-up">
 
   <!-- Section Header -->
   <div class="section-header text-center mb-4">
@@ -518,7 +518,7 @@
 </div>
 
 
-<section class="py-3">
+<section id="contact" class="section fade-right py-3" data-animation="fade-right">
   <h1 class="text-center fw-semibold mb-4">Our Learners Work at</h1>
 
   <div class="logo-slider">
@@ -608,6 +608,7 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  
 
 <!-- it courses carousel -->
 <script>
@@ -627,27 +628,35 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateCarousel() {
         const visibleCards = getVisibleCards();
         const containerWidth = document.querySelector('#it-courses-carousel').offsetWidth;
-        const cardWidth = containerWidth / visibleCards;
 
-        // Set card widths
+        const gap = 12; // matches your CSS gap
+        const cardWidth = Math.floor((containerWidth - (gap * (visibleCards - 1))) / visibleCards);
+
+        // Apply widths
         cards.forEach(card => {
             card.style.minWidth = cardWidth + 'px';
             card.style.maxWidth = cardWidth + 'px';
         });
 
-        // Total scrollable width (number of cards * width)
+        const totalWidth = (cards.length * cardWidth) + (gap * (cards.length - 1));
         const maxIndex = cards.length - visibleCards;
         if (currentIndex > maxIndex) currentIndex = maxIndex;
         if (currentIndex < 0) currentIndex = 0;
 
-        // Apply transform
-        carouselInner.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
-        carouselInner.style.width = (cards.length * cardWidth) + 'px';
+        // Calculate translateX
+        let translateX = currentIndex * (cardWidth + gap);
+
+        // If last slide, align flush with right edge
+        if (currentIndex === maxIndex) {
+            translateX = totalWidth - containerWidth;
+        }
+
+        carouselInner.style.transform = `translateX(-${translateX}px)`;
+        carouselInner.style.width = totalWidth + 'px';
     }
 
     nextBtn.addEventListener('click', function() {
-        const visibleCards = getVisibleCards();
-        const maxIndex = cards.length - visibleCards;
+        const maxIndex = cards.length - getVisibleCards();
         if (currentIndex < maxIndex) {
             currentIndex++;
         }
@@ -665,6 +674,8 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCarousel();
 });
 </script>
+
+
 
 
 
@@ -728,6 +739,36 @@ document.querySelectorAll(".toggle-btn").forEach(btn => {
     });
   })();
 </script>
+
+
+
+<script>
+ document.addEventListener("DOMContentLoaded", () => {
+  // Disable animations on mobile
+  if (window.innerWidth <= 768) {
+    document.querySelectorAll(".section").forEach(section => {
+      section.classList.add("show"); // instantly visible
+    });
+    return;
+  }
+
+  const sections = document.querySelectorAll(".section");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  sections.forEach(section => observer.observe(section));
+});
+
+
+</script>
+
 
 </body>
 </html>
