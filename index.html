@@ -762,23 +762,37 @@ document.querySelectorAll(".toggle-btn").forEach(btn => {
 
 
 <!-- enroll-button-script -->
- <script>
-  // Bootstrap Validation
-  (() => {
-    const forms = document.querySelectorAll('.enroll-form');
-    forms.forEach(form => {
-      form.addEventListener('submit', (event) => {
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  })();
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".enroll-form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent page reload
+
+    if (!form.checkValidity()) {
+      e.stopPropagation();
+      form.classList.add("was-validated"); // Show validation errors
+    } else {
+      // ✅ Success action
+      form.reset();
+      form.classList.remove("was-validated");
+
+      // Show success message
+      alert("🎉 Your enrollment has been submitted successfully!");
+      
+      // Or replace with Bootstrap success alert inside modal:
+      // document.querySelector(".modal-body").innerHTML = 
+      //   '<div class="alert alert-success">🎉 Form submitted successfully!</div>';
+    }
+  });
+});
 </script>
 
 
+
+
+
+<!-- animation script -->
 
 <script>
  document.addEventListener("DOMContentLoaded", () => {
