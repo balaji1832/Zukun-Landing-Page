@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zukun-Best Software Training Institute</title>
   <link rel="icon" type="icon" href="img/Copy-of-Zukun-new-Logo-modified.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" >
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   
 </head>
 <body>
-  <header>
+  <header class="sticky-top">
     <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-white py-3">
     <div class="container">
@@ -30,19 +30,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-lg-center">
           <li class="nav-item">
-            <a class="nav-link active" href="#">HOME</a>
+            <a class="nav-link active" href="#hero">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#">ABOUT US</a>
+            <a class="nav-link " href="#courses">ABOUT US</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">IT COURSES</a>
+            <a class="nav-link dropdown-toggle" href="#courses" data-bs-toggle="dropdown">IT COURSES</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Web Development</a></li>
-              <li><a class="dropdown-item" href="#">Data Science</a></li>
-              <li><a class="dropdown-item" href="#">Cloud and Devops</a></li>
-              <li><a class="dropdown-item" href="#">Robotic Process Automation</a></li>
-              <li><a class="dropdown-item" href="#">Other Training</a></li>
+              <li><a class="dropdown-item" href="https://zukun.in/category/web-development/">Web Development</a></li>
+              <li><a class="dropdown-item" href="https://zukun.in/category/data-science-training/">Data Science</a></li>
+              <li><a class="dropdown-item" href="https://zukun.in/category/cloud-devops/">Cloud and Devops</a></li>
+              <li><a class="dropdown-item" href="https://zukun.in/category/robotic-process-automation/">Robotic Process Automation</a></li>
+              <li><a class="dropdown-item" href="https://zukun.in/category/other-training/">Other Training</a></li>
             </ul>   
           </li>
           <li class="nav-item ms-lg-3">
@@ -206,40 +206,67 @@
       </div>
 
       <!-- Image Column -->
-      <div class="col-12 col-lg-8 text-center">
+      <div class="col-12 col-lg-8 text-center" >
         <div class="container">
         <!-- <h1 style="color: blueviolet;">IT Courses</h1> -->
         <div id="it-courses-carousel" class="carousel multi-carousel">
             <div class="carousel-inner d-flex flex-row flex-nowrap">
                 <div class="card it-course-card ">
-                    <img src="img/AI.png" alt="">
+                    <img src="img/AI.png" alt="AI-TRAINING"> 
                     <div class="card-header">Artificial Intelligence</div>
-                    <div class="card-body">Artificial Intelligence (AI) is revolutionizing industries and reshaping the future of technology. If you are looking to dive into this cutting-edge field, Zukun Academy in Chennai offers the premier AI training program designed.</div>
+                    <a class="text-decoration-none text-dark" href="https://zukun.in/artificial-intelligence/">
+                      <div class="card-body">Artificial Intelligence (AI) is revolutionizing industries and reshaping the future of technology. If you are looking to dive into this cutting-edge field, Zukun Academy in Chennai offers the premier AI training program designed.</div>
+                    </a>
                 </div>
                 <div class="card it-course-card ">
                     <img src="img/data-science.png" alt="">
                     <div class="card-header">Python with Datascience</div>
-                    <div class="card-body">Our Data Science with Python course in Chennai is designed to equip you with the skills and knowledge needed to excel in the field of data science.</div>
+                    <a href="https://zukun.in/python-with-data-science/" class="text-decoration-none text-dark">
+                      <div class="card-body">
+                      Our Data Science with Python course in Chennai is designed to equip you with the skills and knowledge needed to excel in the field of data science.
+                    </div>
+                    </a>
+                    
                 </div>
                 <div class="card it-course-card ">
                     <img src="img/Java filllstack.png" alt="">
                     <div class="card-header">Tableau Training</div>
-                    <div class="card-body">Our Java Full Stack Developer course in Chennai is designed to equip you with skills in both front-end and back-end development using Java.</div>
+                    <a href="https://zukun.in/java-full-stack-developer/" class="text-decoration-none text-dark">
+                      <div class="card-body">
+                      Our Java Full Stack Developer course in Chennai is designed to equip you with skills in both front-end and back-end development using Java.
+                    </div>
+                    </a>
+                    
                 </div>
                 <div class="card it-course-card ">
                     <img src="img/php.png" alt="">
                     <div class="card-header">PHP Training</div>
-                    <div class="card-body">PHP is a popular general-purpose scripting language that is especially suited to web development. Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.</div>
+                    <a href="https://zukun.in/php/" class="text-decoration-none text-dark">
+                      <div class="card-body">
+                      PHP is a popular general-purpose scripting language that is especially suited to web development. Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world.
+                    </div>
+                    </a>
+                    
                 </div>
                 <div class="card it-course-card ">
                     <img src="img/Aws devops.png" alt="">
                     <div class="card-header">AWS DevOps Training</div>
-                    <div class="card-body">Mastering AWS DevOps is essential for professionals aiming to streamline their development and operational processes, enhance productivity, and ensure seamless delivery of applications and services</div>
+                    <a href="https://zukun.in/aws-devops-engineering/" class="text-decoration-none text-dark">
+                      <div class="card-body">
+                      Mastering AWS DevOps is essential for professionals aiming to streamline their development and operational processes, enhance productivity, and ensure seamless delivery of applications and services
+                    </div>
+                    </a>
+                    
                 </div>
                 <div class="card it-course-card ">
                     <img src="img/python.png" alt="">
                     <div class="card-header">Python Training</div>
-                    <div class="card-body">Master both front-end and back-end development with Zukun Academy’s Python Full Stack Developer Training. Designed to equip you with the essential skills and knowledge.</div>
+                    <a href="https://zukun.in/python-full-stack-developer/" class="text-decoration-none text-dark">
+                      <div class="card-body">
+                      Master both front-end and back-end development with Zukun Academy’s Python Full Stack Developer Training. Designed to equip you with the essential skills and knowledge.
+                    </div>
+                    </a>
+                    
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" id="carouselPrev">
@@ -561,32 +588,43 @@
           <h5>Zukun</h5>
           <p><strong>Address:</strong> No:1, Second Floor, 4th Main Rd,<br>
             Kasturba Nagar, Adyar, Chennai, Tamil Nadu 600020</p>
-          <p>Email: info@zukunacademy.com</p>
-          <p>Phone: +91 89259 54490</p>
+         <p>
+  Email: 
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@zukunacademy.com" target="_blank">
+    info@zukunacademy.com
+  </a>
+</p>
+<p>
+  Phone: <a href="tel:+918925954490">+91 89259 54490</a></p>
+
+
+
         </div>
 
         <!-- IT Courses -->
         <div class="col-lg-3 col-md-6 mb-4">
           <h5>IT Courses</h5>
           <ul>
-            <li><i class="fas fa-angle-right"></i><a href="#">Data Science Training</a></li>
-            <li><i class="fas fa-angle-right"></i><a href="#">Web Development</a></li>
-            <li><i class="fas fa-angle-right"></i><a href="#">Cloud and DevOps</a></li>
-            <li><i class="fas fa-angle-right"></i><a href="#">Robotic Process Automation</a></li>
-            <li><i class="fas fa-angle-right"></i><a href="#">Other Training</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="https://zukun.in/category/web-development/">Data Science Training</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="https://zukun.in/category/data-science-training/">Web Development</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="https://zukun.in/category/cloud-devops/">Cloud and DevOps</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="https://zukun.in/category/robotic-process-automation/">Robotic Process Automation</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="https://zukun.in/category/other-training/">Other Training</a></li>
           </ul>
         </div>
 
         <!-- Language Courses -->
         <div class="col-lg-3 col-md-6 mb-4">
-          <h5>Language Courses</h5>
+          <a href="https://zukun.in/category/language-courses/" class="text-decoration-none text-light">
+            <h5>Language Courses</h5>
+          </a> 
           <ul class="row row-cols-2">
-            <li><i class="fas fa-angle-right"></i><a href="#">Chinese</a></li>
-            <li><i class="fas fa-angle-right"></i><a href="#">Arabic</a></li>
-            <li><i class="fas fa-angle-right"></i><a href="#">Japanese</a></li>
-            <li><i class="fas fa-angle-right"></i><a href="#">German</a></li>
-            <li><i class="fas fa-angle-right"></i><a href="#">French</a></li>
-            <li><i class="fas fa-angle-right"></i><a href="#">Spanish</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="https://zukun.in/chinese-language-classes-in-chennai/">Chinese</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="https://zukun.in/arabic/">Arabic</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="https://zukun.in/japanese/">Japanese</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="https://zukun.in/german/">German</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="https://zukun.in/french/">French</a></li>
+            <li><i class="fas fa-angle-right"></i><a href="https://zukun.in/spanish/">Spanish</a></li>
           </ul>
         </div>
 
@@ -594,10 +632,10 @@
         <div class="col-lg-3 col-md-6 mb-4">
           <h5>Follow us on</h5>
           <div class="social-icons">
-            <a href="#"> <img src="img/facebook.png" alt=""  class="img-fluid" srcset=""></a>
-            <a href="#"><img src="img/instagram.png" alt=""  class="img-fluid" srcset=""></a>
-            <a href="#"><img src="img/youtube.png" alt=""  class="img-fluid" srcset=""></a>
-            <a href="#"><img src="img/linkedin.png" alt=""  class="img-fluid " srcset=""></a>
+            <a href="https://www.facebook.com/Zukun.solutions/" target="_blank"> <img src="img/facebook.png" alt=""  class="img-fluid" srcset=""></a>
+            <a href="https://www.instagram.com/zukun.in/" target="_blank"><img src="img/instagram.png" alt=""  class="img-fluid" srcset=""></a>
+            <a href="https://www.youtube.com/@ZukunAcademy" target="_blank"><img src="img/youtube.png" alt=""  class="img-fluid" srcset=""></a>
+            <a href="https://www.linkedin.com/company/zukun-academy/" target="_blank"><img src="img/linkedin.png" alt=""  class="img-fluid " srcset=""></a>
           </div>
         </div>
 
